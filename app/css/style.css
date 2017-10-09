@@ -392,9 +392,16 @@ template {
 html {
   font-family: "Open Sans", sans-serif; }
 
+body {
+  overflow-y: hidden; }
+
 .heading {
   font-weight: lighter;
   font-size: 50px; }
+
+.content {
+  height: 100vh;
+  overflow-y: auto; }
 
 *,
 *:after,
@@ -444,19 +451,33 @@ html {
     width: 100%; } }
 
 .navbar {
-  width: 100vw;
+  z-index: 2;
   height: 65px;
   background-color: #333; }
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .navbar ul li {
+      float: left; }
+      .navbar ul li a {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        padding: 23px;
+        text-decoration: none;
+        color: #fff; }
+      .navbar ul li.pull-right {
+        float: right; }
 
 .sidenav {
-  height: calc(150vh-65px);
+  height: 100vh;
   z-index: 1;
-  top: 0;
-  left: 0;
   background-color: #f7f7f9;
   overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s; }
+  overflow-y: auto;
+  transition: 0.5s;
+  border-right: 1px solid #dadae3; }
   .sidenav ul {
     list-style: none; }
     .sidenav ul li.active a {
@@ -472,7 +493,9 @@ html {
         color: #111; }
 
 .example {
-  background-color: #f7f7f9; }
+  background-color: #f7f7f9;
+  margin-bottom: 50px;
+  padding: 10px; }
   .example .example-content {
     padding: 10px; }
 

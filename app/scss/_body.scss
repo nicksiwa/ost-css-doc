@@ -1,5 +1,10 @@
 html {
-    font-family: $font-family;    
+    font-family: $font-family;
+    
+}
+
+body {
+    overflow-y: hidden;
 }
 
 .heading {
@@ -8,5 +13,6 @@ html {
 }
 
 .content {
-    
+    height: 100vh;
+    overflow-y: auto;
 }
