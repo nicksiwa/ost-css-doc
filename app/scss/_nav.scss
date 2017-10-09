@@ -1,0 +1,37 @@
+.navbar {
+    width: 100vw;
+    height: 65px;
+    background-color: #333;
+}
+
+.sidenav {
+    height: calc(150vh-65px);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f7f7f9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    ul {
+        list-style: none;
+        li {
+            &.active {
+                a {
+                    color: #444;
+                    font-weight: bold;
+                }
+            }
+            a {
+                font-size: 14px;
+                padding: 8px;
+                text-decoration: none;
+                color: #555;
+                display: block;
+                &:hover {
+                    color: #111;
+                }
+            }
+        }
+    }
+}
