@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <div class="col-6">
+        <h1>Table form</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="label">
+                        <label>Name</label>
+                    </td>
+                    <td class="input">
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label>Lastname</label>
+                    </td>
+                    <td class="input">
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label>Gender</label>
+                    </td>
+                    <td class="input">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label>Checkbox</label>
+                    </td>
+                    <td class="input">
+                        <input type="checkbox" id="c1">
+                        <label for="c1">Check1</label>
+                        <input type="checkbox" id="c2">
+                        <label for="c2">Check2</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-6">
+        <h1>Flexbox form</h1>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="input-control">
+        </div>
+        <div class="form-group">
+            <label>Lastname</label>
+            <input type="text" class="input-control">
+        </div>
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="form-group__radio">
+                <label>
+                    <input type="radio" name="gender">Male
+                </label>
+                <label>
+                    <input type="radio" name="gender">Female
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Checkbox</label>
+            <div class="form-group__checkbox">
+                <label>
+                    <input type="checkbox">Check1
+                </label>
+                <label>
+                    <input type="checkbox">Check2
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
