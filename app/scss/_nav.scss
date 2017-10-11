@@ -29,13 +29,7 @@
 }
 
 .sidenav {
-    padding-top: 80px;
-    width: 200px;
-    top: 0;
-    left: 0;
-    display: block;
-    position: fixed;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
     background-color: #f7f7f9;
     overflow-x: hidden;
@@ -62,5 +56,11 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    .sidenav {
+        height: 100%;
     }
 }

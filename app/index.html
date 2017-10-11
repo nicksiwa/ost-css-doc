@@ -10,16 +10,8 @@
 </head>
 
 <body>
-  <div class="navbar">
-    <ul>
-      <li class="pull-right">
-        <a href="javascript:void(0);" style="font-size:15px;" class="toggle" onclick="myFunction()">&#9776;</a>
-      </li>
-      <li><a href="#">Home</a></li>
-    </ul>
-  </div>
   <div class="row">
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav col-2">
       <ul>
         <li class="active"><a href="#">Test</a></li>
         <li><a href="#">Button</a></li>
@@ -30,7 +22,7 @@
         <li><a href="#">Table</a></li>
       </ul>
     </div>
-    <div class="content col-12">
+    <div class="content col-10">
       <h1 class="heading">Buttons</h1>
       <h1>Examples</h1>
       <div class="example">
@@ -60,16 +52,6 @@
       </div>
     </div>
   </div>
-  <script>
-      function myFunction() {
-          var x = document.getElementById("mySidenav");
-          if (x.style.display === "block") {
-              x.style.display = "none";
-          } else {
-              x.style.display = "block";
-          }
-      }
-  </script>
 </body>
 
 </html>
