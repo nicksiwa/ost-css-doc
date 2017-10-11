@@ -1,32 +1,32 @@
-.navbar {
-    z-index: 2;
-    height: 65px;
-    background-color: #333;
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        li {
-            float: left;
-            a {
-                display: block;
-                text-align: center;
-                font-size: 14px;
-                padding: 23px;
-                text-decoration: none;
-                color: #fff;
+// .navbar {
+//     z-index: 2;
+//     height: 65px;
+//     background-color: #333;
+//     ul {
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;
+//         li {
+//             float: left;
+//             a {
+//                 display: block;
+//                 text-align: center;
+//                 font-size: 14px;
+//                 padding: 23px;
+//                 text-decoration: none;
+//                 color: #fff;
 
-                &.toggle {
-                    display: none;
-                }
-            }
+//                 &.toggle {
+//                     display: none;
+//                 }
+//             }
 
-            &.pull-right{
-                float: right;
-            }
-        }
-    }
-}
+//             &.pull-right{
+//                 float: right;
+//             }
+//         }
+//     }
+// }
 
 .sidenav {
     height: 100vh;
@@ -36,23 +36,40 @@
     overflow-y: auto;
     transition: 0.5s;
     border-right: 1px solid darken(#f7f7f9,10%);
-    ul {
-        list-style: none;
-        li {
-            &.active {
-                a {
-                    color: #444;
-                    font-weight: bold;
-                }
-            }
-            a {
-                font-size: 14px;
-                padding: 8px;
-                text-decoration: none;
+
+    &__head {
+        font-size: 30px;
+        margin-bottom: 30px;
+
+        .toggle {
+            float: right;
+            display: none;
+            i {
                 color: #555;
-                display: block;
-                &:hover {
-                    color: #111;
+            }
+        }
+    }
+
+    &__link {
+        
+        ul {
+            list-style: none;
+            li {
+                &.active {
+                    a {
+                        color: #444;
+                        font-weight: bold;
+                    }
+                }
+                a {
+                    font-size: 14px;
+                    padding: 8px;
+                    text-decoration: none;
+                    color: #555;
+                    display: block;
+                    &:hover {
+                        color: #111;
+                    }
                 }
             }
         }
@@ -61,6 +78,13 @@
 
 @media only screen and (max-width: 768px) { 
     .sidenav {
+        border-bottom: 1px solid darken(#f7f7f9,10%);
         height: 100%;
+
+        &__head {
+            .toggle {
+                display: inline-block;
+            }
+        }
     }
 }

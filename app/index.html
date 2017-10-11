@@ -7,20 +7,27 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="vendor/font-awesome-4.7.0/css/font-awesome.css">
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>  
 </head>
 
 <body>
   <div class="row">
-    <div id="mySidenav" class="sidenav col-2">
-      <ul>
-        <li class="active"><a href="#">Test</a></li>
-        <li><a href="#">Button</a></li>
-        <li><a href="#">Card</a></li>
-        <li><a href="#">Form</a></li>
-        <li><a href="#">List group</a></li>
-        <li><a href="#">Navigation bar</a></li>
-        <li><a href="#">Table</a></li>
-      </ul>
+    <div class="sidenav col-2">
+      <div class="sidenav__head">
+        Headding
+        <a href="#" class="toggle" id="toggle"><i class="fa fa-bars fa-lg"></i></a>
+      </div>
+      <div class="sidenav__link" id="sidenavLink">
+        <ul>
+          <li class="active"><a href="#">Test</a></li>
+          <li><a href="#">Button</a></li>
+          <li><a href="#">Card</a></li>
+          <li><a href="#">Form</a></li>
+          <li><a href="#">List group</a></li>
+          <li><a href="#">Navigation bar</a></li>
+          <li><a href="#">Table</a></li>
+        </ul>
+      </div>
     </div>
     <div class="content col-10">
       <h1 class="heading">Buttons</h1>
@@ -52,6 +59,7 @@
       </div>
     </div>
   </div>
+  <script src="js/nav-toggle.js"></script>
 </body>
 
 </html>

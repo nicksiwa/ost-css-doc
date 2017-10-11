@@ -450,28 +450,6 @@ body {
   height: 100vh;
   overflow-y: auto; }
 
-.navbar {
-  z-index: 2;
-  height: 65px;
-  background-color: #333; }
-  .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .navbar ul li {
-      float: left; }
-      .navbar ul li a {
-        display: block;
-        text-align: center;
-        font-size: 14px;
-        padding: 23px;
-        text-decoration: none;
-        color: #fff; }
-        .navbar ul li a.toggle {
-          display: none; }
-      .navbar ul li.pull-right {
-        float: right; }
-
 .sidenav {
   height: 100vh;
   z-index: -1;
@@ -480,23 +458,34 @@ body {
   overflow-y: auto;
   transition: 0.5s;
   border-right: 1px solid #dadae3; }
-  .sidenav ul {
+  .sidenav__head {
+    font-size: 30px;
+    margin-bottom: 30px; }
+    .sidenav__head .toggle {
+      float: right;
+      display: none; }
+      .sidenav__head .toggle i {
+        color: #555; }
+  .sidenav__link ul {
     list-style: none; }
-    .sidenav ul li.active a {
+    .sidenav__link ul li.active a {
       color: #444;
       font-weight: bold; }
-    .sidenav ul li a {
+    .sidenav__link ul li a {
       font-size: 14px;
       padding: 8px;
       text-decoration: none;
       color: #555;
       display: block; }
-      .sidenav ul li a:hover {
+      .sidenav__link ul li a:hover {
         color: #111; }
 
 @media only screen and (max-width: 768px) {
   .sidenav {
-    height: 100%; } }
+    border-bottom: 1px solid #dadae3;
+    height: 100%; }
+    .sidenav__head .toggle {
+      display: inline-block; } }
 
 .example {
   background-color: #f7f7f9;
