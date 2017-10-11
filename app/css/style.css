@@ -480,12 +480,18 @@ body {
       .sidenav__link ul li a:hover {
         color: #111; }
 
+@media only screen and (min-width: 768px) {
+  .sidenav__link {
+    display: block !important; } }
+
 @media only screen and (max-width: 768px) {
   .sidenav {
     border-bottom: 1px solid #dadae3;
     height: 100%; }
     .sidenav__head .toggle {
-      display: inline-block; } }
+      display: inline-block; }
+    .sidenav__link {
+      display: none; } }
 
 .example {
   background-color: #f7f7f9;

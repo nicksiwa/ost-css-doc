@@ -76,6 +76,14 @@
     }
 }
 
+@media only screen and (min-width: 768px) { 
+    .sidenav {
+        &__link {
+            display: block !important;
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) { 
     .sidenav {
         border-bottom: 1px solid darken(#f7f7f9,10%);
@@ -85,6 +93,10 @@
             .toggle {
                 display: inline-block;
             }
+        }
+
+        &__link {
+            display: none;
         }
     }
 }
