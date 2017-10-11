@@ -47,7 +47,11 @@
             float: right;
             display: none;
             i {
-                color: #555;
+                color: $font-color;
+
+                &:hover {
+                    color: darken($font-color, 100%)
+                }
             }
         }
     }
