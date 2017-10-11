@@ -461,28 +461,32 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   transition: 0.5s;
-  border-right: 1px solid #dadae3; }
+  border-right: 1px solid #dadae3;
+  padding: 0; }
   .sidenav__head {
+    border-bottom: 1px solid #dadae3;
     font-size: 30px;
-    margin-bottom: 30px; }
+    padding: 15px; }
     .sidenav__head .toggle {
       float: right;
       display: none; }
       .sidenav__head .toggle i {
         color: #555; }
-  .sidenav__link ul {
-    list-style: none; }
-    .sidenav__link ul li.active a {
-      color: #444;
-      font-weight: bold; }
-    .sidenav__link ul li a {
-      font-size: 14px;
-      padding: 8px;
-      text-decoration: none;
-      color: #555;
-      display: block; }
-      .sidenav__link ul li a:hover {
-        color: #111; }
+  .sidenav__link {
+    padding: 15px; }
+    .sidenav__link ul {
+      list-style: none; }
+      .sidenav__link ul li.active a {
+        color: #222222;
+        font-weight: bold; }
+      .sidenav__link ul li a {
+        font-size: 14px;
+        padding: 8px;
+        text-decoration: none;
+        color: #555;
+        display: block; }
+        .sidenav__link ul li a:hover {
+          color: black; }
 
 @media only screen and (min-width: 768px) {
   .sidenav__link {
@@ -490,6 +494,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .sidenav {
+    border-right: none;
     border-bottom: 1px solid #dadae3;
     height: 100%; }
     .sidenav__head .toggle {

@@ -31,15 +31,17 @@
 .sidenav {
     height: 100vh;
     z-index: -1;
-    background-color: #f7f7f9;
+    background-color: $bg-color;
     overflow-x: hidden;
     overflow-y: auto;
     transition: 0.5s;
-    border-right: 1px solid darken(#f7f7f9,10%);
+    border-right: 1px solid darken($bg-color,10%);
+    padding: 0;
 
     &__head {
+        border-bottom: 1px solid darken($bg-color,10%);
         font-size: 30px;
-        margin-bottom: 30px;
+        padding: 15px;
 
         .toggle {
             float: right;
@@ -51,13 +53,13 @@
     }
 
     &__link {
-        
+        padding: 15px;
         ul {
             list-style: none;
             li {
                 &.active {
                     a {
-                        color: #444;
+                        color: darken($font-color, 20%);
                         font-weight: bold;
                     }
                 }
@@ -65,10 +67,10 @@
                     font-size: 14px;
                     padding: 8px;
                     text-decoration: none;
-                    color: #555;
+                    color: $font-color;
                     display: block;
                     &:hover {
-                        color: #111;
+                        color: darken($font-color, 100%);
                     }
                 }
             }
@@ -86,7 +88,8 @@
 
 @media only screen and (max-width: 768px) { 
     .sidenav {
-        border-bottom: 1px solid darken(#f7f7f9,10%);
+        border-right: none;
+        border-bottom: 1px solid darken($bg-color,10%);
         height: 100%;
 
         &__head {
