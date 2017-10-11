@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 .heading {
@@ -14,4 +14,10 @@ body {
 .content {
     height: 100vh;
     overflow-y: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        overflow: visible;
+    }
 }

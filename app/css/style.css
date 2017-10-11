@@ -440,7 +440,7 @@ html {
   font-family: "Open Sans", sans-serif; }
 
 body {
-  overflow-y: hidden; }
+  overflow-y: auto; }
 
 .heading {
   font-weight: lighter;
@@ -449,6 +449,10 @@ body {
 .content {
   height: 100vh;
   overflow-y: auto; }
+
+@media only screen and (max-width: 768px) {
+  .content {
+    overflow: visible; } }
 
 .sidenav {
   height: 100vh;
